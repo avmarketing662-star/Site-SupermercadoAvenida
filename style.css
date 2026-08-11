@@ -1,0 +1,2313 @@
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f7f9fd;
+    color: #222;
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   VARIÁVEIS
+========================================================= */
+
+:root {
+    --azul: #0D57C7;
+    --azulEscuro: #003B8E;
+    --azulClaro: #eaf3ff;
+
+    --cinza: #6d6d6d;
+    --branco: #fff;
+
+    --shadow: 0 10px 25px rgba(0, 0, 0, .08);
+    --radius: 18px;
+}
+
+
+/* =========================================================
+   ELEMENTOS GERAIS
+========================================================= */
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    padding: 90px 8%;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--azul);
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--azul);
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* =========================================================
+   BOTÕES
+========================================================= */
+
+button {
+    padding: 14px 40px;
+    border: none;
+    border-radius: 40px;
+    background: var(--azul);
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .35s;
+}
+
+button:hover {
+    background: var(--azulEscuro);
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 7%;
+    background: rgba(255, 255, 255, .93);
+    backdrop-filter: blur(18px);
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .05);
+}
+
+header nav {
+    display: flex;
+    gap: 40px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    transition: .3s;
+    padding: 8px 18px;
+    border-radius: 40px;
+}
+
+header nav a:hover {
+    background: var(--azul);
+    color: white;
+}
+
+
+/* =========================================================
+   HEADER PRINCIPAL
+========================================================= */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+    z-index: 999;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .08);
+}
+
+.logo img {
+    width: 160px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    flex: 1;
+    white-space: nowrap;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: var(--azul);
+}
+
+.btn-menu {
+    background: var(--azul);
+    color: white;
+    padding: 14px 28px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.btn-menu:hover {
+    background: var(--azulEscuro);
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.fundop {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#imgcentral {
+    width: 92%;
+    border-radius: 28px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .18);
+    transition: .4s;
+}
+
+#imgcentral:hover {
+    transform: scale(1.02);
+}
+
+
+/* =========================================================
+   INÍCIO
+========================================================= */
+
+.inicio {
+    min-height: 100vh;
+    padding: 140px 8% 60px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+
+    background: linear-gradient(
+        120deg,
+        #ffffff,
+        #eef5ff
+    );
+}
+
+.inicio-texto span {
+    color: var(--azul);
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.inicio-texto h1 {
+    font-size: 65px;
+    line-height: 1.1;
+    color: var(--azul);
+    margin: 20px 0;
+}
+
+.inicio-texto p {
+    font-size: 22px;
+    max-width: 500px;
+    margin-bottom: 35px;
+}
+
+.inicio-texto a {
+    display: inline-block;
+    background: var(--azul);
+    color: white;
+    padding: 18px 45px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.inicio-texto a:hover {
+    background: var(--azulEscuro);
+    transform: translateY(-4px);
+}
+
+.inicio-imagem {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio-imagem img {
+    width: 120%;
+    max-width: 650px;
+    height: 550px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 35px;
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, .15);
+}
+
+/* =========================================================
+   SOBRE
+========================================================= */
+
+.iniciosn {
+    padding: 90px 9%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.iniciosn h5 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: var(--azul);
+    margin-bottom: 15px;
+}
+
+.iniciosn h3 {
+    margin-bottom: 25px;
+    font-size: 42px;
+}
+
+.iniciosn p {
+    font-size: 18px;
+}
+
+.iniciosn img {
+    height: 1000px;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    transition: .35s;
+}
+
+.iniciosn img:hover {
+    transform: translateY(-8px);
+}
+
+
+/* =========================================================
+   SOBRE - PRINCIPAL
+========================================================= */
+
+.sobre {
+    padding: 100px 8%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.sobre span,
+.mapa span {
+    color: var(--azul);
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.sobre h2,
+.mapa h2 {
+    font-size: 42px;
+    margin: 20px 0;
+    color: #111;
+}
+
+.sobre img,
+.mapa img {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .12);
+}
+
+
+/* =========================================================
+   NOVIDADES
+========================================================= */
+
+.inicionf {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+.inicionf p {
+    color: var(--azul);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.inicionf h3 {
+    margin-bottom: 45px;
+}
+
+
+/* =========================================================
+   CARDS DE ATALHO
+========================================================= */
+
+.ofertasatalho {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.ofertasatalho img {
+    width: 100%;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: .35s;
+    box-shadow: var(--shadow);
+}
+
+.ofertasatalho img:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 45px rgba(13, 87, 199, .25);
+}
+
+
+/* =========================================================
+   MAPA
+========================================================= */
+
+.iniciomaps {
+    padding: 100px 8%;
+
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.iniciomaps p {
+    color: var(--azul);
+    font-weight: 700;
+}
+
+.iniciomaps h3 {
+    margin: 18px 0 35px;
+}
+
+.iniciomaps a {
+    display: inline-block;
+    background: var(--azul);
+    color: white;
+    padding: 14px 38px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.iniciomaps a:hover {
+    background: var(--azulEscuro);
+    transform: translateY(-4px);
+}
+
+.iniciomaps img {
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+}
+
+
+/* =========================================================
+   MAPA - PRINCIPAL
+========================================================= */
+
+.mapa {
+    padding: 100px 8%;
+
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    gap: 70px;
+    align-items: center;
+
+    background: #f7f9fd;
+}
+
+.mapa a {
+    display: inline-block;
+    background: var(--azul);
+    color: white;
+    padding: 15px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   GRID DAS LOJAS
+========================================================= */
+
+.imagensmaps {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 35px;
+
+    width: 100%;
+}
+
+
+/* =========================================================
+   CARD DA LOJA
+========================================================= */
+
+.loja-card {
+    width: 100%;
+    height: auto;
+
+    background: #fff;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, .08);
+
+    transition: .35s;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+.loja-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(13, 87, 199, .18);
+}
+
+.loja-card img {
+    width: 100%;
+
+    height: 250px;
+
+    object-fit: cover;
+
+    display: block;
+
+    order: 1;
+}
+
+.loja-info {
+    padding: 25px;
+
+    order: 2;
+}
+
+
+
+.loja-info h4 {
+    font-size: 24px;
+    color: var(--azul);
+    margin-bottom: 12px;
+}
+
+.loja-info p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.loja-info a {
+    display: inline-block;
+    padding: 12px 28px;
+    background: var(--azul);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.loja-info a:hover {
+    background: var(--azulEscuro);
+}
+
+.titulo-lojas {
+    text-align: center;
+    margin-bottom: 40px;
+}
+/* =========================================================
+   OFERTAS
+========================================================= */
+
+.oferta {
+    padding: 100px 8%;
+    background: #f5f8ff;
+}
+
+
+/* =========================================================
+   CONTAINER DAS OFERTAS
+========================================================= */
+
+.ofertas-container {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+
+/* =========================================================
+   JORNAL
+========================================================= */
+
+.jornal {
+    position: sticky;
+    top: 120px;
+
+    background: white;
+    padding: 30px;
+
+    border-radius: 25px;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .10);
+}
+
+.jornal h2 {
+    text-align: center;
+    font-size: 32px;
+    color: var(--azul);
+    margin-bottom: 30px;
+}
+
+.jornal img {
+    width: 100%;
+    border-radius: 18px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .15);
+
+    transition: .35s;
+}
+
+.jornal img:hover {
+    transform: scale(1.03);
+}
+
+
+/* =========================================================
+   PRODUTOS
+========================================================= */
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+
+/* =========================================================
+   CATEGORIA
+========================================================= */
+
+.categoria {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    margin-bottom: 45px;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .07);
+}
+
+.categoria-card {
+    margin-bottom: 30px;
+}
+
+.categoria-card img {
+    width: 250px;
+    border-radius: 18px;
+}
+
+
+/* =========================================================
+   GRID DE PRODUTOS
+========================================================= */
+
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================================================
+   CARD DE PRODUTO
+========================================================= */
+
+.produto-card {
+    background: #fff;
+
+    border-radius: 22px;
+
+    padding: 25px 20px;
+
+    text-align: center;
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+    transition: .35s;
+
+    animation: produtoEntrada .6s ease;
+}
+
+.produto-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow: 0 20px 45px rgba(13, 87, 199, .20);
+}
+
+
+/* =========================================================
+   IMAGEM DO PRODUTO
+========================================================= */
+
+.produto-card img {
+    width: 160px;
+    height: 160px;
+
+    object-fit: contain;
+
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+
+/* =========================================================
+   NOME DO PRODUTO
+========================================================= */
+
+.produto-card h3 {
+    font-size: 20px;
+    color: #333;
+    min-height: 50px;
+}
+
+
+/* =========================================================
+   PREÇO
+========================================================= */
+
+.produto-card span {
+    display: block;
+
+    margin-top: 15px;
+
+    font-size: 35px;
+    font-weight: 900;
+
+    color: #d90000;
+}
+
+
+/* =========================================================
+   ETIQUETA OFERTA
+========================================================= */
+
+.produto-card::before {
+    content: "OFERTA";
+
+    position: absolute;
+
+    top: 15px;
+    left: -35px;
+
+    background: #d90000;
+    color: white;
+
+    padding: 8px 45px;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    transform: rotate(-45deg);
+}
+
+
+/* =========================================================
+   ANIMAÇÃO
+========================================================= */
+
+@keyframes produtoEntrada {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================================
+   DESTAQUES
+========================================================= */
+
+
+.destaques {
+width: 100%;
+margin: 40px auto;
+padding: 20px 8%;
+}
+
+.destaques h2 {
+text-align: center;
+color: var(--azul);
+font-size: 30px;
+font-weight: 800;
+margin-bottom: 30px;
+}
+
+.destaques h2 span {
+color: #bfcbe0;
+margin: 0 8px;
+}
+
+/* =========================================================
+   CONTAINER DE DESTAQUES DINÂMICOS
+========================================================= */
+
+
+.destaques-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
+    gap: 35px;
+    width: 100%;
+    }
+
+
+/* =========================================================
+   CARD DESTAQUE
+========================================================= */
+.destaque-card {
+width: 100%;
+max-width: 950px;
+height: 500px;
+
+margin: auto;
+
+position: relative;
+
+border-radius: 20px;
+
+overflow: hidden;
+
+box-shadow: 0 8px 20px rgba(0, 0, 0, .15);
+
+background: #111;
+
+
+}
+
+
+/* =========================================================
+   IMAGEM DESTAQUE
+========================================================= */
+
+.destaque-imagem {
+    width: 100%;
+    height: 100%;
+}
+
+.destaque-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+
+
+/* =========================================================
+   INFORMAÇÕES DESTAQUE
+========================================================= */
+
+.destaque-info {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    width: 35%;
+    min-width: 220px;
+
+    height: 100%;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    text-align: center;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    padding: 25px;
+}
+
+
+.destaque-info h3 {
+    font-size: 20px;
+
+    margin: 0;
+
+    color: #222;
+
+    background: white;
+
+    padding: 8px 20px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+
+
+
+.destaque-info p {
+font-size: 18px;
+
+margin: 8px 0 12px;
+
+background: white;
+
+color: #222;
+
+padding: 8px 20px;
+
+border-radius: 8px;
+
+font-weight: bold;
+}
+
+
+/* =========================================================
+   PREÇO DESTAQUE
+========================================================= */
+
+.preco {
+    background: white;
+
+    color: #d90000;
+
+    padding: 8px 20px;
+
+    border-radius: 8px;
+
+    font-weight: 900;
+
+    font-size: 25px;
+}
+
+/* =========================================================
+   RECEITAS
+========================================================= */
+
+.receitas {
+    padding: 100px 8%;
+    background: white;
+}
+
+.receitas-texto {
+    max-width: 850px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.receitas-texto h2 {
+    color: var(--azul);
+}
+
+.receitas-texto p {
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   GRID DE RECEITAS
+========================================================= */
+
+.receitas-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+    max-width: 500px;
+
+    margin: auto;
+}
+
+
+/* =========================================================
+   CARD DE RECEITA
+========================================================= */
+
+.receitas-card {
+    background: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: .35s;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.receitas-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 20px 45px rgba(13, 87, 199, .18);
+}
+
+.receitas-card img {
+    width: 70%;
+    height: 100%;
+
+    object-fit: cover;
+
+    margin: 0 auto;
+}
+
+.receitas-card-conteudo {
+    padding: 25px;
+
+    text-align: center;
+}
+
+.receitas-card-conteudo h3 {
+    color: var(--azul);
+
+    font-size: 24px;
+
+    margin-bottom: 12px;
+
+    text-align: center;
+}
+
+.receitas-card-conteudo p {
+    font-size: 16px;
+
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.receitas-card-conteudo a {
+    display: inline-block;
+
+    background: var(--azul);
+    color: white;
+
+    padding: 10px 24px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.receitas-card-conteudo a:hover {
+    background: var(--azulEscuro);
+}
+
+
+/* =========================================================
+   CARD DE RECEITA VAZIO / DESTAQUE
+========================================================= */
+
+#receitasCard {
+    max-width: 900px;
+    margin: 40px auto 0;
+}
+
+
+/* =========================================================
+   CLUBE AVENIDA
+========================================================= */
+
+.clube {
+    padding: 100px 8%;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef5ff,
+            #ffffff
+        );
+}
+
+
+/* =========================================================
+   CABEÇALHO DO CLUBE
+========================================================= */
+
+.clube-header {
+    max-width: 850px;
+
+    margin: 0 auto 60px;
+
+    text-align: center;
+}
+
+.clube-header span {
+    color: var(--azul);
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.clube-header h2 {
+    margin: 15px 0;
+}
+
+.clube-header p {
+    font-size: 18px;
+}
+
+
+/* =========================================================
+   CONTEÚDO CLUBE
+========================================================= */
+
+.clube-conteudo {
+    max-width: 1400px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 50px;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   CARDS / IMAGENS CLUBE
+========================================================= */
+
+.clube-card,
+#clubeCards {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+    justify-content: center;
+    gap: 25px;
+}
+
+.clube-card-item {
+    background: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: .35s;
+}
+
+.clube-card-item:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 20px 40px rgba(13, 87, 199, .18);
+}
+
+.clube-card-item img {
+    width: 100%;
+    height: 230px;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES CLUBE
+========================================================= */
+
+.clube-info {
+    background: white;
+
+    padding: 45px;
+
+    border-radius: 25px;
+
+    box-shadow: var(--shadow);
+}
+
+.clube-info h3 {
+    color: var(--azul);
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+}
+
+.clube-info p {
+    margin-bottom: 30px;
+}
+
+.btn-clube {
+    display: inline-block;
+
+    background: var(--azul);
+
+    color: white;
+
+    padding: 15px 35px;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: .3s;
+}
+
+.btn-clube:hover {
+    background: var(--azulEscuro);
+
+    transform: translateY(-4px);
+}
+
+
+/* =========================================================
+   NOTÍCIAS & DICAS
+========================================================= */
+
+.noticias {
+    padding: 100px 8%;
+    background: #f7f9fd;
+}
+
+
+/* =========================================================
+   GRID DE NOTÍCIAS
+========================================================= */
+
+#noticiasGrid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: 45px auto 0;
+}
+
+
+/* =========================================================
+   CARD NOTÍCIA
+========================================================= */
+
+.noticia-card {
+    background: white;
+
+    border-radius: 22px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: .35s;
+}
+
+.noticia-card:hover {
+    transform: translateY(-10px);
+
+    box-shadow:
+        0 20px 45px rgba(13, 87, 199, .18);
+}
+
+
+/* =========================================================
+   IMAGEM NOTÍCIA
+========================================================= */
+
+.noticia-card img {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* =========================================================
+   INFORMAÇÕES NOTÍCIA
+========================================================= */
+
+.noticia-info {
+    padding: 25px;
+}
+
+.noticia-info span {
+    display: inline-block;
+
+    color: var(--azul);
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+.noticia-info h3 {
+    color: #222;
+
+    font-size: 25px;
+
+    margin-bottom: 12px;
+}
+
+.noticia-info p {
+    font-size: 16px;
+
+    margin-bottom: 20px;
+}
+
+.noticia-info a {
+    display: inline-block;
+
+    background: var(--azul);
+
+    color: white;
+
+    padding: 10px 25px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+.noticia-info a:hover {
+    background: var(--azulEscuro);
+}
+
+
+/* =========================================================
+   TRABALHE CONOSCO
+========================================================= */
+
+.trabalheconosco {
+    padding: 100px 8%;
+    background: white;
+}
+
+
+/* =========================================================
+   HEADER TRABALHE
+========================================================= */
+
+.noticias-header {
+    max-width: 850px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.noticias-header span {
+    color: var(--azul);
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.noticias-header h2 {
+    color: var(--azul);
+
+    margin: 15px 0;
+}
+
+.noticias-header p {
+    margin-top: 15px;
+}
+
+
+/* =========================================================
+   MISSÃO / VISÃO / VALORES
+========================================================= */
+
+.mvv {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 35px;
+}
+
+.mvv-card {
+    background: #f7f9fd;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    border-radius: 25px;
+
+    transition: .35s;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, .07);
+}
+
+.mvv-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 20px 45px rgba(13, 87, 199, .20);
+}
+
+.mvv-card img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: contain;
+
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.mvv-card h3 {
+    color: var(--azul);
+
+    margin-bottom: 15px;
+
+    font-size: 26px;
+}
+
+.mvv-card p {
+    font-size: 16px;
+}
+
+
+/* =========================================================
+   EQUIPE
+========================================================= */
+
+.equipe {
+    margin-top: 90px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 60px;
+
+    background: #f2f7ff;
+
+    padding: 50px;
+
+    border-radius: 30px;
+}
+
+.equipe-texto h3 {
+    font-size: 38px;
+
+    margin-bottom: 20px;
+}
+
+.equipe-texto p {
+    margin-bottom: 35px;
+}
+
+.equipe button {
+    font-size: 18px;
+
+    padding: 16px 35px;
+}
+
+.equipe img {
+    width: 100%;
+
+    border-radius: 25px;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    margin-top: 120px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #003B8E,
+            #0D57C7
+        );
+
+    padding: 60px 8% 30px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+footer::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    background: rgba(255,255,255,.08);
+
+    border-radius: 50%;
+
+    top: -150px;
+    right: -100px;
+}
+
+footer div {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+}
+
+footer img {
+    width: 160px;
+}
+
+footer p {
+    color: white;
+
+    font-size: 16px;
+
+    line-height: 1.6;
+}
+
+footer a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s;
+}
+
+footer a:hover {
+    opacity: .7;
+}
+
+footer strong {
+    font-size: 20px;
+
+    color: white;
+}
+
+footer div::after {
+    content: "";
+
+    width: 100%;
+    height: 1px;
+
+    background:
+        rgba(255,255,255,.25);
+
+    position: absolute;
+
+    bottom: -25px;
+    left: 0;
+}
+
+
+/* =========================================================
+   SCROLLBAR
+========================================================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--azul);
+
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ececec;
+}
+
+
+/* =========================================================
+   NOTEBOOKS / TELAS ATÉ 1200px
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    /* -----------------------------------------------------
+       OFERTAS
+    ----------------------------------------------------- */
+
+    .ofertas-container {
+        grid-template-columns: 1fr;
+    }
+
+    .jornal {
+        position: relative;
+        top: 0;
+    }
+
+
+    /* -----------------------------------------------------
+       DESTAQUES
+    ----------------------------------------------------- */
+
+    .destaques-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .destaque-card {
+        width: 100%;
+        max-width: 950px;
+        margin: 0 auto;
+    }
+
+
+    /* -----------------------------------------------------
+       CLUBE
+    ----------------------------------------------------- */
+
+    .clube-conteudo {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -----------------------------------------------------
+       HEADER / NAVBAR
+    ----------------------------------------------------- */
+
+    header {
+        padding-left: 3%;
+        padding-right: 3%;
+        gap: 15px;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .menu {
+        gap: 12px 18px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .btn-menu {
+        padding: 11px 16px;
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   TABLET GRANDE — ATÉ 1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    /* -----------------------------------------------------
+       PRODUTOS
+       2 produtos por linha
+    ----------------------------------------------------- */
+
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* -----------------------------------------------------
+       TÍTULO PRINCIPAL
+    ----------------------------------------------------- */
+
+    .inicio-texto h1 {
+        font-size: 50px;
+    }
+}
+
+
+/* =========================================================
+   TABLET — ATÉ 1000px
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    /* -----------------------------------------------------
+       MISSÃO / VISÃO / VALORES
+    ----------------------------------------------------- */
+
+    .mvv {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -----------------------------------------------------
+       EQUIPE
+    ----------------------------------------------------- */
+
+    .equipe {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+
+    /* -----------------------------------------------------
+       INÍCIO
+    ----------------------------------------------------- */
+
+    .inicio {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .inicio-texto p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .inicio-imagem img {
+        width: 100%;
+    }
+}
+
+
+/* =========================================================
+   TABLET PEQUENO — ATÉ 900px
+========================================================= */
+
+@media (max-width: 900px) {
+
+    /* -----------------------------------------------------
+       IMAGENS / MAPAS
+    ----------------------------------------------------- */
+
+    .imagensmaps {
+        grid-template-columns: 1fr;
+    }
+
+    .loja-card {
+        margin: auto;
+    }
+
+
+    /* -----------------------------------------------------
+       SOBRE / MAPA
+    ----------------------------------------------------- */
+
+    .sobre,
+    .mapa {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+
+    /* -----------------------------------------------------
+       PRODUTOS
+    ----------------------------------------------------- */
+
+    .produtos-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* -----------------------------------------------------
+       MAPAS / INÍCIO
+    ----------------------------------------------------- */
+
+    .iniciomaps {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+
+    /* -----------------------------------------------------
+       CLUBE
+    ----------------------------------------------------- */
+
+    .clube-conteudo {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   CELULAR — ATÉ 700px
+========================================================= */
+
+@media (max-width: 700px) {
+
+    /* -----------------------------------------------------
+       SEÇÕES
+       ALTERE AQUI O ESPAÇO LATERAL DO SITE NO CELULAR
+    ----------------------------------------------------- */
+
+    section {
+        padding: 60px 20px;
+    }
+
+
+    /* -----------------------------------------------------
+       MENU
+       NÃO USAR display: none AQUI!
+    ----------------------------------------------------- */
+
+    .menu {
+        gap: 8px 16px;
+    }
+
+    .menu a {
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+
+    /* -----------------------------------------------------
+       BOTÃO OFERTAS
+    ----------------------------------------------------- */
+
+    .btn-menu {
+        padding: 9px 16px;
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       PRODUTOS
+    ----------------------------------------------------- */
+
+    .produtos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .categoria {
+        padding: 20px;
+    }
+
+    .categoria-card img {
+        width: 180px;
+    }
+
+
+    /* -----------------------------------------------------
+       JORNAL
+    ----------------------------------------------------- */
+
+    .jornal h2 {
+        font-size: 25px;
+    }
+
+
+    /* -----------------------------------------------------
+       TRABALHE CONOSCO
+    ----------------------------------------------------- */
+
+    .trabalhe-header h2 {
+        font-size: 36px;
+    }
+
+
+    /* -----------------------------------------------------
+       EQUIPE
+    ----------------------------------------------------- */
+
+    .equipe {
+        padding: 25px;
+    }
+
+
+    /* -----------------------------------------------------
+       DESTAQUES
+    ----------------------------------------------------- */
+    .destaques {
+        padding: 60px 20px;
+    }
+
+    .destaques-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .destaque-card {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        height: auto;
+        margin: 0;
+    }
+
+    .destaque-info {
+        width: 100%;
+        min-width: 0;
+
+        height: auto;
+
+        bottom: 0;
+        top: auto;
+
+        padding: 20px;
+
+        background:
+            linear-gradient(
+                transparent,
+                rgba(0, 0, 0, .85)
+            );
+    }
+
+    .destaque-info h3 {
+        font-size: 16px;
+    }
+
+    .destaque-info p {
+        font-size: 15px;
+    }
+
+    .preco {
+        font-size: 20px;
+    }
+    /* -----------------------------------------------------
+       RECEITAS
+    ----------------------------------------------------- */
+
+    .receitas-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* -----------------------------------------------------
+       NOTÍCIAS
+    ----------------------------------------------------- */
+
+    #noticiasGrid {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        gap: 25px;
+
+        margin: 35px auto 0;
+    }
+
+    .noticia-card {
+        width: 100%;
+    }
+    .noticia-card img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+        display: block;
+    }
+
+    /* -----------------------------------------------------
+       CLUBE
+    ----------------------------------------------------- */
+
+    .clube-info {
+        padding: 30px;
+    }
+
+
+    /* -----------------------------------------------------
+       FOOTER
+    ----------------------------------------------------- */
+
+    footer {
+        text-align: center;
+    }
+
+    footer div {
+        justify-content: center;
+    }
+}
+
+
+/* =========================================================
+   CELULAR PEQUENO — ATÉ 650px
+
+   AQUI A LOGO É ESCONDIDA
+========================================================= */
+
+@media (max-width: 650px) {
+
+    /* -----------------------------------------------------
+       HEADER
+       A logo desaparece para economizar espaço.
+    ----------------------------------------------------- */
+
+    header {
+        flex-direction: column;
+
+        align-items: center;
+
+        padding: 10px 15px;
+
+        gap: 8px;
+    }
+
+
+    /* -----------------------------------------------------
+       ESCONDER LOGO
+    ----------------------------------------------------- */
+
+    .logo {
+        display: none;
+    }
+
+
+    /* -----------------------------------------------------
+       BOTÃO OFERTAS
+    ----------------------------------------------------- */
+
+    .btn-menu {
+        order: 1;
+
+        margin: 0;
+
+        padding: 9px 18px;
+
+        font-size: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       MENU
+       TODOS OS LINKS CONTINUAM VISÍVEIS
+    ----------------------------------------------------- */
+
+    .menu {
+        order: 2;
+
+        width: 100%;
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 8px 16px;
+
+        padding: 5px 0 8px;
+    }
+
+    .menu a {
+        font-size: 12px;
+
+        white-space: nowrap;
+    }
+}
+
+
+/* =========================================================
+   CELULAR MUITO PEQUENO — ATÉ 500px
+========================================================= */
+
+@media (max-width: 500px) {
+
+    /* -----------------------------------------------------
+       HEADER
+    ----------------------------------------------------- */
+
+    header {
+        padding: 8px 10px;
+    }
+
+
+    /* -----------------------------------------------------
+       LOGO
+       Continua escondida no celular.
+    ----------------------------------------------------- */
+
+    .logo {
+        display: none;
+    }
+
+
+    /* -----------------------------------------------------
+       BOTÃO OFERTAS
+    ----------------------------------------------------- */
+
+    .btn-menu {
+        padding: 8px 14px;
+
+        font-size: 11px;
+    }
+
+
+    /* -----------------------------------------------------
+       MENU
+       NÃO USAR display: none!
+    ----------------------------------------------------- */
+
+    .menu {
+        width: 100%;
+
+        gap: 7px 12px;
+
+        justify-content: center;
+
+        align-items: center;
+
+        margin: 0 auto;
+
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .menu a {
+        font-size: 11px;
+
+        white-space: nowrap;
+
+        flex: 0 0 auto;
+    }
+
+
+    /* -----------------------------------------------------
+       TÍTULO PRINCIPAL
+    ----------------------------------------------------- */
+
+    .inicio-texto h1 {
+        font-size: 40px;
+    }
+
+
+    /* -----------------------------------------------------
+       TÍTULOS
+    ----------------------------------------------------- */
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+
+    /* -----------------------------------------------------
+       LOJAS
+    ----------------------------------------------------- */
+
+    .imagensmaps {
+        grid-template-columns: 1fr;
+    }
+
+    .loja-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .loja-card img {
+        height: 220px;
+    }
+
+
+    /* -----------------------------------------------------
+       DESTAQUES
+    ----------------------------------------------------- */
+
+    .destaques {
+        padding: 20px;
+    }
+
+    .destaques-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destaque-card {
+        aspect-ratio: 16 / 9;
+    }
+
+
+    /* -----------------------------------------------------
+       PRODUTOS
+    ----------------------------------------------------- */
+
+    .produto-card span {
+        font-size: 30px;
+    }
+
+
+    /* -----------------------------------------------------
+       CLUBE
+    ----------------------------------------------------- */
+
+    .clube-card,
+    #clubeCards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================================================
+   IMAGENS SEM CONTEÚDO
+   Esta regra vale para TODAS as telas.
+========================================================= */
+
+img[src=""],
+img:not([src]) {
+    visibility: hidden;
+}
+
+
+/* =========================================================
+   EVITA CARDS DE PRODUTO VAZIOS
+========================================================= */
+
+.produto-card:has(img[src=""]) {
+    min-height: 0;
+}
+
+
+/* =========================================================
+   ANIMAÇÃO DOS CARDS DINÂMICOS
+   Esta regra vale para TODAS as telas.
+========================================================= */
+
+.receitas-card,
+.noticia-card,
+.clube-card-item,
+.destaque-card {
+    animation: cardEntrada .5s ease;
+}
+
+
+/* =========================================================
+   ANIMAÇÃO
+========================================================= */
+
+@keyframes cardEntrada {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0);
+    }
+}
+
