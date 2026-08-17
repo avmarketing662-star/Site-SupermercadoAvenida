@@ -1,0 +1,142 @@
+{
+  "produtos": [
+    {
+      "id": "Merc1",
+      "nome": "Arroz prato fino TP 1 5kg ",
+      "valor": "105,99",
+      "imagem": "https://http2.mlstatic.com/D_NQ_NP_2X_713055-MLB109408948676_042026-F-arroz-prato-fino--branco-5-kg-tipo-1.webp"
+    },
+    {
+      "id": "Beb1",
+      "nome": "Guarana lata 350ml",
+      "valor": "28,99",
+      "imagem": "https://fortatacadista.vteximg.com.br/arquivos/ids/309372-1000-1000/7891991000826--1-.jpg?v=638537348211430000"
+    },
+    {
+      "id": "Aco1",
+      "nome": "Contra file kg",
+      "valor": "25,99",
+      "imagem": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk0wArzlLAlS_IDOm15CEPNGq1_iTNvYIticG9mudH3A&s=10"
+    },
+    {
+      "id": "Hig1",
+      "nome": "Cif 250ml",
+      "valor": "39,99",
+      "imagem": "https://images.tcdn.com.br/img/img_prod/1234949/limpador_multiuso_cremoso_450ml_cif_3084_1_24cb4adb2d83579adeaf62860b773324.jpg"
+    },
+    {
+      "id": "Pad1",
+      "nome": "Padraia teste",
+      "valor": "59,99",
+      "imagem": ""
+    }
+  ],
+  "jornal": {
+    "pagfrente": "https://template.canva.com/EAE4GiTpoaM/2/0/1067w-beELLfGMde4.jpg",
+    "pagverso": "https://template.canva.com/EAE4GiTpoaM/2/0/1067w-beELLfGMde4.jpg"
+  },
+  "destaques": [
+    {
+      "imgDestaque": "",
+      "nomeDestaque": "Capsula Sensação",
+      "descricaoDestaque": "Capsulas da sensação nestle",
+      "valorDestaque": "35,99"
+    },
+    {
+      "imgDestaque": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS55PL1LKBKMF5CeDydr7mQlQgzNpIObsSKKX9-7-LHbpDIHKGBdvpLxZA&s=10",
+      "nomeDestaque": "Guarana 2l",
+      "descricaoDestaque": "Refrigerente de guarana uma delicia ",
+      "valorDestaque": "105,90"
+    },
+    {
+      "imgDestaque": "",
+      "nomeDestaque": "Nescau extra cacau",
+      "descricaoDestaque": "Esse é muito gostoso mesmo",
+      "valorDestaque": "4,99"
+    }
+  ],
+  "receitas": [
+    {
+      "titulo": "Receita deliciosa de sopa",
+      "descricao": "Deliciosa receita de sopa dqd wqw wd w w wqdqwdwdqwdw wqd w q",
+      "imagem": "https://template.canva.com/EAE4GiTpoaM/2/0/1067w-beELLfGMde4.jpg",
+      "link": ""
+    },
+    {
+      "titulo": "Receita de cockies",
+      "descricao": "Rceceita delisiciosa de cockies com leite moça",
+      "imagem": "https://template.canva.com/EAFC6-fp79A/1/0/1067w-cpGdfZtfoj8.jpg",
+      "link": ""
+    },
+    {
+      "titulo": "panqueca americana",
+      "descricao": "Só de ver, ja me deu vontade, acho que vou fazer em casa kkkk",
+      "imagem": "https://template.canva.com/EAE4GiTpoaM/2/0/1067w-beELLfGMde4.jpg",
+      "link": ""
+    }
+  ],
+  "clube": {
+    "tituloPequeno": "Clube avenida!",
+    "titulo": "Faça parte do clube avenida",
+    "descricao": "Digite a descrição principal",
+    "infoTitulo": "Faça parte você Tambem",
+    "infoDescricao": "Mais vantagens para você!",
+    "botaoTexto": "Quero fazer parte",
+    "botaoLink": "https://chat.whatsapp.com/CbekHyq8b4b2phAuKGXfWo",
+    "cards": [
+      {
+        "tituloPequeno": "teste",
+        "titulo": "10%",
+        "descricao": "wqeqw dq"
+      },
+      {
+        "tituloPequeno": "teste",
+        "titulo": "20%",
+        "descricao": "wdwqd qdd"
+      },
+      {
+        "tituloPequeno": "teesete",
+        "titulo": "30%",
+        "descricao": " wdq dqdwqd"
+      },
+      {
+        "tituloPequeno": "teste",
+        "titulo": "10%",
+        "descricao": "wqeqw dq"
+      },
+      {
+        "tituloPequeno": "trtrr",
+        "titulo": "150",
+        "descricao": "teret"
+      },
+      {
+        "tituloPequeno": "rtrt",
+        "titulo": "180",
+        "descricao": "tetrte"
+      }
+    ]
+  },
+  "noticias": [
+    {
+      "categoria": "NOVIDADES",
+      "titulo": "jornal teste 1",
+      "descricao": "blblablablablablablablabla",
+      "imagem": "https://template.canva.com/EAE4GiTpoaM/2/0/1067w-beELLfGMde4.jpg",
+      "link": ""
+    },
+    {
+      "categoria": "NOVIDADES",
+      "titulo": "Sac avenida",
+      "descricao": "Agora o avenida, conta com um numero oficial de remalações, elogois ou sugetões para você. podendo entar em contato com o numer 35999999999. @smavenida🛒",
+      "imagem": "",
+      "link": ""
+    },
+    {
+      "categoria": "Dicas",
+      "titulo": "Muito baratoooo",
+      "descricao": "coca colaaaa",
+      "imagem": "https://zaffari.vtexassets.com/arquivos/ids/308075/1007841-00.jpg?v=639076251393470000",
+      "link": ""
+    }
+  ]
+}
